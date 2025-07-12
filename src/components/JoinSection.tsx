@@ -5,7 +5,7 @@ import { ExternalLink, Users, Shield, Star } from "lucide-react";
 
 export function JoinSection() {
   return (
-    <section className="py-16 px-6 bg-background relative overflow-hidden">
+    <section className="py-16 px-6 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       
@@ -36,11 +36,6 @@ export function JoinSection() {
               <ExternalLink className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
               Join Discord Server
             </Button>
-            
-            {/* Additional info */}
-            <p className="text-sm text-muted-foreground mt-6">
-              Free to join • No spam • Active moderation • 18+ friendly
-            </p>
           </CardContent>
         </Card>
       </div>

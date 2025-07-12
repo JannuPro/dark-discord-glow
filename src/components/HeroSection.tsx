@@ -43,20 +43,13 @@ export function HeroSection() {
           </div>
         </div>
         
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        {/* CTA Button */}
+        <div className="flex justify-center">
           <Button 
             size="lg" 
             className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-lg px-8 py-6 h-auto"
           >
             Join Server
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-primary/30 bg-background/10 backdrop-blur-sm hover:bg-primary/10 text-lg px-8 py-6 h-auto"
-          >
-            Learn More
           </Button>
         </div>
       </div>
