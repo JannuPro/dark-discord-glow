@@ -18,13 +18,13 @@ export function HeroSection() {
         </Badge>
         
         {/* Main heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
           Epic Gaming Hub
         </h1>
         
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Join the ultimate gaming community where legends are made. Connect with skilled players, participate in tournaments, and level up your gameplay.
+        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
+          Join the ultimate gaming community. Connect, compete, and level up your gameplay.
         </p>
         
         {/* Stats */}
