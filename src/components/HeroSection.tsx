@@ -4,7 +4,7 @@ import { Users, MessageCircle, Star } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
@@ -18,9 +18,11 @@ export function HeroSection() {
         </Badge>
         
         {/* Main heading */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-          Epic Gaming Hub
-        </h1>
+        <div className="py-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight">
+            Epic Gaming Hub
+          </h1>
+        </div>
         
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
@@ -47,7 +49,7 @@ export function HeroSection() {
         <div className="flex justify-center">
           <Button 
             size="lg" 
-            className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-lg px-8 py-6 h-auto"
+            className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-xl px-16 py-8 h-auto min-w-[280px] font-semibold"
           >
             Join Server
           </Button>

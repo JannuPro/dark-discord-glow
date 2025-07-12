@@ -21,9 +21,11 @@ export function JoinSection() {
             </div>
             
             {/* Main CTA */}
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Ready to Level Up?
-            </h2>
+            <div className="py-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight">
+                Ready to Level Up?
+              </h2>
+            </div>
             <p className="text-lg text-muted-foreground mb-6 max-w-lg mx-auto">
               Join Epic Gaming Hub and become part of our active gaming community.
             </p>
@@ -31,9 +33,9 @@ export function JoinSection() {
             {/* Join button */}
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-lg px-8 py-6 h-auto animate-glow-pulse group"
+              className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-xl px-16 py-8 h-auto animate-glow-pulse group min-w-[320px] font-semibold"
             >
-              <ExternalLink className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
+              <ExternalLink className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
               Join Discord Server
             </Button>
           </CardContent>
