@@ -21,8 +21,8 @@ export function JoinSection() {
             </div>
             
             {/* Main CTA */}
-            <div className="py-8 mt-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-relaxed px-2">
+            <div className="py-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight">
                 Ready to Level Up?
               </h2>
             </div>

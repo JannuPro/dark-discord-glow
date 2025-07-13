@@ -34,9 +34,9 @@ export function FeaturesSection() {
     <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Section header */}
-        <div className="text-center mb-12 animate-fade-in pt-8">
-          <div className="py-8 mt-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-relaxed px-2">
+        <div className="text-center mb-12 animate-fade-in">
+          <div className="py-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight">
               Why Join Our Community?
             </h2>
           </div>

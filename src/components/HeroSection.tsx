@@ -18,8 +18,8 @@ export function HeroSection() {
         </Badge>
         
         {/* Main heading */}
-        <div className="py-8 mt-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-relaxed px-2">
+        <div className="py-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight">
             Epic Gaming Hub
           </h1>
         </div>
@@ -49,7 +49,7 @@ export function HeroSection() {
         <div className="flex justify-center">
           <Button 
             size="lg" 
-            className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-xl px-20 py-10 h-auto min-w-[320px] font-bold rounded-xl hover:scale-105 transform shadow-lg"
+            className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-xl px-16 py-8 h-auto min-w-[280px] font-semibold"
           >
             Join Server
           </Button>
