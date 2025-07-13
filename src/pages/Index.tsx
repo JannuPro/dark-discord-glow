@@ -4,10 +4,12 @@ import { JoinSection } from "@/components/JoinSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-hero">
-      <HeroSection />
-      <FeaturesSection />
-      <JoinSection />
+    <div className="min-h-screen">
+      <div className="bg-gradient-hero">
+        <HeroSection />
+        <FeaturesSection />
+        <JoinSection />
+      </div>
     </div>
   );
 };
