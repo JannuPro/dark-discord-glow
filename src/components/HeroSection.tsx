@@ -18,8 +18,8 @@ export function HeroSection() {
         </Badge>
         
         {/* Main heading */}
-        <div className="py-8 mt-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight px-6 py-4">
+        <div className="py-16 mt-12">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight px-6 py-4">
             Epic Gaming Hub
           </h1>
         </div>
