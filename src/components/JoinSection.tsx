@@ -33,7 +33,7 @@ export function JoinSection() {
             {/* Join button */}
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-2xl px-24 py-10 h-auto animate-glow-pulse group min-w-[380px] font-bold rounded-2xl border border-primary/20 shadow-xl"
+              className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-2xl px-8 md:px-24 py-6 md:py-10 h-auto animate-glow-pulse group min-w-0 md:min-w-[380px] w-full max-w-full font-bold rounded-2xl border border-primary/20 shadow-xl"
               asChild
             >
               <a href={serverConfig.discordInvite} target="_blank" rel="noopener noreferrer">
