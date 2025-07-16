@@ -5,8 +5,8 @@ export const serverConfig = {
   // Server Information
   serverName: "Epic Gaming Hub",
   description: "Join the ultimate gaming community. Connect, compete, and level up your gameplay.",
-  onlineMembers: "1,247",
-  totalMembers: "5.2K+",
+  onlineMembers: "100",
+  totalMembers: "400",
   
   // Features (max 4 recommended for clean layout)
   features: [
@@ -37,7 +37,7 @@ export const serverConfig = {
   joinDescription: "Join Epic Gaming Hub and become part of our active gaming community.",
   
   // Optional: Discord invite link
-  discordInvite: "https://discord.gg/yourinvite"
+  discordInvite: "https://discord.gg/jecv4bwAWA"
 };
 
 // Color Theme (optional customization)

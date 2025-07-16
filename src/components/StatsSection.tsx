@@ -28,9 +28,11 @@ export function StatsSection() {
     <section className="py-20 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Community by the Numbers
-          </h2>
+          <div className="py-2 mt-0">
+            <h2 className="text-4xl md:text-5xl font-bold mb-0 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Community by the Numbers
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join thousands of gamers who have found their home in our thriving Discord community.
           </p>

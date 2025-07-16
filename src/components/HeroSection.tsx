@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Users, MessageCircle, Star } from "lucide-react";
+import { serverConfig } from "@/config/server";
 
 export function HeroSection() {
   return (
@@ -12,36 +13,36 @@ export function HeroSection() {
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center animate-fade-in">
         {/* Status badge */}
-        <Badge variant="secondary" className="mb-6 bg-primary/20 text-primary border-primary/30">
-          <div className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></div>
-          1,247 members online
+        <Badge variant="secondary" className="mb-8 bg-primary/20 text-primary border-primary/30 text-lg md:text-2xl px-6 py-3">
+          <div className="w-3 h-3 bg-primary rounded-full mr-3 animate-pulse"></div>
+          100 members online
         </Badge>
         
         {/* Main heading */}
-        <div className="py-8 mt-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight px-6 py-4">
+        <div className="py-2 mt-0">
+          <h1 className="text-5xl md:text-7xl font-bold mb-0 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight px-8 py-4">
             Epic Gaming Hub
           </h1>
         </div>
         
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
           Join the ultimate gaming community. Connect, compete, and level up your gameplay.
         </p>
         
         {/* Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mb-10 text-sm">
-          <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border border-border/50">
-            <Users className="w-4 h-4 text-primary" />
-            <span className="text-foreground font-medium">5.2k Members</span>
+        <div className="flex flex-wrap justify-center gap-10 mb-12 text-lg md:text-2xl">
+          <div className="flex items-center gap-3 bg-card/50 backdrop-blur-sm px-6 py-3 rounded-full border border-border/50">
+            <Users className="w-6 h-6 text-primary" />
+            <span className="text-foreground font-semibold">400 Members</span>
           </div>
-          <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border border-border/50">
-            <MessageCircle className="w-4 h-4 text-primary" />
-            <span className="text-foreground font-medium">24/7 Active</span>
+          <div className="flex items-center gap-3 bg-card/50 backdrop-blur-sm px-6 py-3 rounded-full border border-border/50">
+            <MessageCircle className="w-6 h-6 text-primary" />
+            <span className="text-foreground font-semibold">24/7 Active</span>
           </div>
-          <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm px-4 py-2 rounded-full border border-border/50">
-            <Star className="w-4 h-4 text-primary" />
-            <span className="text-foreground font-medium">Top Rated</span>
+          <div className="flex items-center gap-3 bg-card/50 backdrop-blur-sm px-6 py-3 rounded-full border border-border/50">
+            <Star className="w-6 h-6 text-primary" />
+            <span className="text-foreground font-semibold">Top Rated</span>
           </div>
         </div>
         
@@ -49,10 +50,13 @@ export function HeroSection() {
         <div className="flex justify-center">
           <Button 
             size="lg" 
-            className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-xl px-12 py-6 h-auto min-w-[280px] font-bold rounded-xl hover:scale-105 transform shadow-xl border border-primary/20 group"
+            className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-2xl px-16 py-8 h-auto min-w-[320px] font-bold rounded-2xl hover:scale-105 transform shadow-xl border border-primary/20 group"
+            asChild
           >
-            <Users className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
-            Join Server
+            <a href={serverConfig.discordInvite} target="_blank" rel="noopener noreferrer">
+              <Users className="w-8 h-8 mr-4 group-hover:scale-110 transition-transform" />
+              Join Server
+            </a>
           </Button>
         </div>
       </div>

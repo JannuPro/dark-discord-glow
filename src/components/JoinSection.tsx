@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Users, Shield, Star } from "lucide-react";
+import { serverConfig } from "@/config/server";
 
 export function JoinSection() {
   return (
@@ -9,7 +10,7 @@ export function JoinSection() {
       {/* Background effects removed for seamless background */}
       
       <div className="max-w-3xl mx-auto relative z-10">
-        <Card className="bg-gradient-card border-border/50 shadow-elevated">
+        <Card className="bg-gradient-card border-2 border-primary/30 hover:border-primary transition-all duration-300 shadow-elevated rounded-2xl shadow-lg">
           <CardContent className="p-8 text-center">
             {/* Status indicators */}
             <div className="flex justify-center gap-3 mb-6">
@@ -20,8 +21,8 @@ export function JoinSection() {
             </div>
             
             {/* Main CTA */}
-            <div className="py-8 mt-6">
-              <h2 className="text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight px-6 py-4">
+            <div className="py-2 mt-0">
+              <h2 className="text-4xl md:text-5xl font-bold mb-0 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight px-6 py-2">
                 Ready to Level Up?
               </h2>
             </div>
@@ -33,9 +34,12 @@ export function JoinSection() {
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-2xl px-24 py-10 h-auto animate-glow-pulse group min-w-[380px] font-bold rounded-2xl border border-primary/20 shadow-xl"
+              asChild
             >
-              <ExternalLink className="w-7 h-7 mr-4 group-hover:scale-110 transition-transform" />
-              Join Discord Server
+              <a href={serverConfig.discordInvite} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="w-7 h-7 mr-4 group-hover:scale-110 transition-transform" />
+                Join Discord Server
+              </a>
             </Button>
           </CardContent>
         </Card>
